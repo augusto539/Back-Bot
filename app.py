@@ -6,7 +6,8 @@ app =  Flask(__name__)
 
 @app.route('/')
 def landing():
-   return render_template('landing.html')
+   landing = "active"
+   return render_template('landing.html', landing=landing)
 
 @app.route('/logIn')
 def logIn():
@@ -17,8 +18,9 @@ def SigIn():
    return ('SigIn')
 
 @app.route('/program')
-def programar():
-   return render_template('program.html')
+def program():
+   program = "active"
+   return render_template('program.html', program=program)
 
 
 if __name__ == "__main__":

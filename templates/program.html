@@ -4,27 +4,31 @@
 
     <div class="program">
         <div class="contact_card">
-            <img src="" alt="">
-            <h2> prueva </h2>
+            <div class="empty">
+                <div class="circle">
+                    <div class="head"></div>
+                    <div class="body"></div>
+                </div>
+            </div>
+            <h1> prueva </h1>
         </div>
-    </div>
-
-    <div class="data">
         <div class="tags">
-            <h3> nombre </h3>
-            <h3> mensaje </h3>
-            <h3> hora de inicio </h3>
-            <h3> hora final </h3>
-            <h3> filtro </h3>
+            <p class="name"> nombre </p>
+            <p class="message"> mensaje </p>
+            <p class="start_time"> hora de inicio </p>
+            <p class="end_time"> hora final </p>
+            <p class="filter"> filtro </p>
         </div>
         <div class="imput">
-            <input type="text" required>
-            <input type="text" required>
-            <input type="time" id="appt" name="appt" min="00:00" max="23:59" required>
-            <input type="time" id="appt" name="appt" min="00:00" max="23:59" required>
-            <input type="text" required>
+            <input type="text" class="name" required>
+            <input type="text" class="message" required>
+            <input type="time" class="start_time" id="appt" name="appt" min="00:00" max="23:59" required>
+            <input type="time" class="end_time" id="appt" name="appt" min="00:00" max="23:59" required>
+            <input type="text" class="filter" required>
+        </div>
+        <div class="buttom">
+            <button> programar </button>
         </div>
     </div>
-
 
 {% endblock %}
