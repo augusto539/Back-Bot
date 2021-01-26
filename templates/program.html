@@ -12,22 +12,25 @@
             </div>
             <h1> prueva </h1>
         </div>
-        <div class="tags">
-            <p class="name"> nombre </p>
-            <p class="message"> mensaje </p>
-            <p class="start_time"> hora de inicio </p>
-            <p class="end_time"> hora final </p>
-            <p class="filter"> filtro </p>
-        </div>
         <div class="imput">
-            <input type="text" class="name" required>
-            <input type="text" class="message" required>
-            <input type="time" class="start_time" id="appt" name="appt" min="00:00" max="23:59" required>
-            <input type="time" class="end_time" id="appt" name="appt" min="00:00" max="23:59" required>
-            <input type="text" class="filter" required>
-        </div>
-        <div class="buttom">
-            <button> programar </button>
+            <form action="" name="program_form" method="post">
+                <label for="name" class="name"> Name </label>
+                <input type="text" class="name" name="name" required>
+
+                <label for="message" class="message"> Message </label>
+                <input type="text" class="message" name="massage" required>
+
+                <label for="start_time" class="start_time"> Start time </label>
+                <input type="time" class="start_time" name="start_time" min="00:00" max="23:59" required>
+
+                <label for="end_time" class="end_time"> End time </label>
+                <input type="time" class="end_time" name="end_time" min="00:00" max="23:59" required>
+
+                <label for="_filter" class="_filter"> Filter </label>
+                <input type="text" class="_filter" name="_filter" required>
+
+                <button type="submit"> Programar </button>
+            </form>
         </div>
     </div>
 
