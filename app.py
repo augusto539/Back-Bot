@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
-
+from web_driver import web_driver
 
 app =  Flask(__name__)
 
@@ -45,6 +45,8 @@ def program():
         _filter = request.form['_filter']
 
         print(name, massage, start_time, end_time, _filter)
+
+        web_driver(name, massage)
 
         next = request.args.get('next', None)
         if next:
